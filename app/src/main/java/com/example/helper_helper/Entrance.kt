@@ -3,15 +3,20 @@ package com.example.helper_helper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_entrance.*
+
 
 class Entrance : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_entrance)
 
-        sendButton.setOnClickListener {
-            val intent = Intent(application, MainActivity::class.java)
+        GoToInput.setOnClickListener {
+            val intent = Intent(application, Inputs::class.java)
+            startActivity(intent)
+        }
+        GoToOutput.setOnClickListener {
+            val intent = Intent(application, Outputs::class.java)
             startActivity(intent)
         }
     }

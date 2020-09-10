@@ -1,8 +1,32 @@
 <resources>
     <string name="app_name">helper-helper</string>
     <string name="button">YourAppName</string>
-    <string name="main">Main Activity</string>
-    <string name="move">MOVE</string>
-    <string name="sub">Sub Activity</string>
+    <string name="helper">Helper × Helper</string>
+    <string name="sub1">Sub Activity1</string>
+    <string name="sub2">Sub Activity2</string>
     <string name="return_sub">RETURN</string>
+    <string name="move1" >入力フォームへ</string>
+    <string name="move2" >出力フォームへ</string>
+    <string name="success">success</string>
+
+    <string name="clean">掃除</string>
+    <string name="clean1">掃除機がけ</string>
+    <string name="clean2">雑巾がけ</string>
+    <string name="clean3">モップがけ</string>
+    <string name="clean4">箒かけ</string>
+    <string name="clean5">整理整頓</string>
+    <string name="clean6">ゴミ集め</string>
+
+    <string name="excrete">排泄</string>
+    <string name="excrete1">トイレ</string>
+    <string name="excrete2">ポータブルトイレ</string>
+    <string name="excrete3">尿器</string>
+    <string name="textview">Age</string>
+
+    <string-array name="list">
+    <item name="btA" type="string">A型</item>
+    <item name="btB" type="string">B型</item>
+    <item name="btO" type="string">O型</item>
+    <item name="btAB" type="string">AB型</item>
+</string-array>
 </resources>
