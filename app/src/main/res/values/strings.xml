@@ -8,6 +8,8 @@
     <string name="move1" >入力フォームへ</string>
     <string name="move2" >出力フォームへ</string>
     <string name="success">success</string>
+    <string name="welcome">ようこそHelper×Helperへ</string>
+
 
     <string name="clean">掃除</string>
     <string name="clean1">掃除機がけ</string>
@@ -21,8 +23,13 @@
     <string name="excrete1">トイレ</string>
     <string name="excrete2">ポータブルトイレ</string>
     <string name="excrete3">尿器</string>
-    <string name="textview">Age</string>
+    <string name="TextView">Age</string>
+    <string name="HardP">固め便</string>
+    <string name="NormalP">普通便</string>
+    <string name="SoftP">柔め便</string>
+    <string name="radiobutton">RadioButton</string>
 
+    <string name="back">もどる</string>
     <string-array name="list">
     <item name="btA" type="string">A型</item>
     <item name="btB" type="string">B型</item>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#0000"
     android:gravity="center"
-    android:background="#fdd"
+    android:orientation="vertical"
     tools:context=".Inputs">
 
     <Button
@@ -73,6 +74,7 @@
     </RadioGroup>
 
     <RadioGroup
+        android:id="@+id/excrete_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#fdf">
@@ -85,22 +87,68 @@
             android:textSize="30sp" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/excrete1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/excrete1" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/excrete2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/excrete2" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/excrete3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/excrete3" />
+    </RadioGroup>
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/defecation_group"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:baselineAligned="false"-->
+<!--            android:contentDescription="@string/NormalP"-->
+<!--            app:srcCompat="@drawable/hardpoops" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:contentDescription="@string/HardP"-->
+<!--            app:srcCompat="@drawable/hardpoops" />-->
+<!--    </RadioGroup>-->
+
+    <RadioGroup
+        android:id="@+id/meal_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton"
+            android:background="@drawable/hardpoops" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton" />
     </RadioGroup>
 
 </LinearLayout>

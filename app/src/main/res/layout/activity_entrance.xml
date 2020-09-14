@@ -2,17 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="#dfe"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Inputs">
 
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="35sp" />
+
     <Button
         android:id="@+id/GoToInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="30dp"
         android:text="@string/move1"
         android:textSize="30sp" />
 
@@ -20,7 +27,7 @@
         android:id="@+id/GoToOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="30dp"
         android:text="@string/move2"
         android:textSize="30sp" />
 

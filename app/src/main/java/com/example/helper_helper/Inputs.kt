@@ -1,16 +1,23 @@
 package com.example.helper_helper
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.RadioGroup
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_inputs.*
+import androidx.annotation.RequiresApi
+import com.google.firebase.Timestamp
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.activity_inputs.*
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+
 
 val db = FirebaseFirestore.getInstance()
 
 class Inputs : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inputs)
@@ -29,14 +36,10 @@ class Inputs : AppCompatActivity() {
             "last" to "Lovelace",
             "born" to 1815
         )
-        db.collection("users")
-            .add(user)
-            .addOnSuccessListener { documentReference ->
-                Log.d("heavenlier", "DocumentSnapshot added with ID: ${documentReference.id}")
-            }
-            .addOnFailureListener { e ->
-                Log.w("heavenlier", "Error adding document", e)
-            }
+
+
+        val id= LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+        db.collection("users").document(id as String).set(user)
 
         returnButton.setOnClickListener{
             finish()
